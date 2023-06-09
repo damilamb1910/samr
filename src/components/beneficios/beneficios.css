@@ -1,0 +1,98 @@
+.box{
+  width: 300px;
+  box-shadow: 2px 2px 10px  black;
+}
+
+.scene{
+  
+  width: 400px;
+  height: 400px;
+  perspective: 600px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cards__beneficios__contanainer{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.beneficios__container{
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__beneficios{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card__face--front {
+  background-image: url('../../assets/cajas/1.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card__face{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card__face--back{
+  
+  background-size: cover;
+  transform: rotateY( 180deg );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.card__face--back ul{
+  list-style: disc !important;
+  text-shadow: 2px 2px 10px white;
+  background-color: rgba(235, 232, 232, 0.5);
+}
+
+.card__beneficios__isActive{
+  transform: rotateY(180deg);
+}
+
+.background__back1{
+  background-image: url('../../assets/back/1.png');
+}
+
+.background__back2{
+  background-image: url('../../assets/back/2.png');
+}
+
+.background__back3{
+  background-image: url('../../assets/back/3.jpeg');
+}
+
+.background__back4{
+  background-image: url('../../assets/back/4.png');
+}

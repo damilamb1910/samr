@@ -1,0 +1,58 @@
+.off{
+    background-color: red;
+}
+
+.on{
+    background-color: greenyellow;
+}
+
+.card__implementacion{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.card__implementacion__info{
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 10px;
+    opacity: 0;
+    
+    transition: all ease-in-out 2s;
+}
+
+.card__implementacion__info__isActive{
+    opacity: 1;
+    
+}
+
+.card__implementacion__button__container{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.implementacion__container{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.cards__implementacion__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

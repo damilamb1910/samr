@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+p{
+    color: black;
+}
+
+.inicio__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 400px;
+    text-align: center;
+}
+
+.inicio__container p{
+    width: 70%;
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+.inicio__container h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.inicio__container h1{
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+.inicio__head{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+span{
+    position: absolute;
+    font-size: 150px;
+    font-weight: 900;
+   
+}
+
+.borde{
+    color: black;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 1px 0 white, -1px 1px 0 white;
+}
+.wave{
+    color: #09f;
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave{
+    0%,100%{
+        clip-path: polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+    50%{
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%, 
+            100% 100%,
+            0% 100%
+        );
+    }
+}

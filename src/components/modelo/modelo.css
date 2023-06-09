@@ -1,0 +1,189 @@
+.modelo__head{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 400px;
+}
+
+.buzo{
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-bottom: 400px;
+    animation: movimiento 2s ease-in-out infinite;
+}
+
+@keyframes movimiento {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.pez{
+    position: absolute;
+    width: 400px;
+    right: 0;
+    padding-top:400px ;
+    animation: movimiento 2s ease-in-out infinite;
+    animation-delay: -5s;
+}
+
+
+
+.card__modelo{
+    background-color:#00AEEF ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    border: solid #0c2458;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+    position: relative;
+}
+
+.card__modelo:hover{
+transform: scale(1.1) ;
+transition: all ease-in-out .5s;
+color: white;
+border: white;
+background-color: #0c2458 ;
+}
+
+
+.display__none{
+    display: none;
+}
+
+.card__modelo h5{
+ color: black;
+ text-align: justify;
+ 
+
+}
+
+.modal__active{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 12;
+        background-color: rgba(15, 9, 9, 0.6);
+}
+
+
+
+
+.modelo__head h2{
+    font-size: 40px;
+}
+
+.card__modelo__head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+width: 300px;
+align-items: center;
+}
+
+.modelo__head p{
+    font-size: 25px;
+    width: 70%;
+}
+
+.card__modelo__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(37,136,238,1) 83%, rgba(0,153,255,1) 100%);
+}
+
+.waves{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(37,136,238,1) 35%, rgba(0,212,255,1) 100%);
+    overflow: hidden;
+}
+
+.waveh{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('../../assets/wave.png');
+    background-size: 1000px 100px;
+
+}
+
+.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.wave3{
+    animation: animate3 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+@keyframes animate {
+    0%{
+        background-position-x: 0 ;
+    }
+    100%{
+        background-position-x:1000px ;
+    }
+}
+
+@keyframes animate2 {
+    0%{
+        background-position-x: 0 ;
+    }
+    100%{
+        background-position-x:1000px ;
+    }
+}
+@keyframes animate3 {
+    0%{
+        background-position-x: 0 ;
+    }
+    100%{
+        background-position-x:1000px ;
+    }
+}

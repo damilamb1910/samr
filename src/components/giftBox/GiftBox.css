@@ -1,0 +1,73 @@
+.gift-box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  perspective: 800px;
+}
+
+.gift-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.box-top,
+.box-bottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: red; /* Puedes cambiar el color según tu preferencia */
+  transition: transform 0.5s;
+}
+
+.box-top {
+  top: 0;
+  transform-origin: bottom;
+}
+
+.box-bottom {
+  bottom: 0;
+  transform-origin: top;
+}
+
+.gift-box.open .box-top {
+  transform: rotateX(-90deg);
+}
+
+.gift-box.open .box-bottom {
+  transform: rotateX(90deg);
+}
+
+.gift-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.gift-box.open .gift-content {
+  transform: translateZ(-150px);
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.gift-box.open .card {
+  transform: rotateX(0);
+}
