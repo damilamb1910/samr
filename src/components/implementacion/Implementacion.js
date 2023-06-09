@@ -26,7 +26,7 @@ const Implementacion = () => {
 
   return (
     <div className='implementacion__container'>
-      <h3>Implementacion</h3>
+      <h3>Implementación</h3>
 
 
 

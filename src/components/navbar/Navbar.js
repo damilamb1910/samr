@@ -13,7 +13,7 @@ const Navbar = () => {
 <Link to={'/modelo'}><li className="nav__item">¿Qué es el modelo SAMR?</li></Link>
 <Link to={'/beneficios'}> <li className="nav__item">Beneficios</li></Link>
 <Link to={'/implementacion'}> <li className="nav__item">Implementación</li></Link>
-<Link to={'/'}> <li className="nav__item">Recursos adicionales</li></Link>
+<Link to={'/recursos'}> <li className="nav__item">Recursos adicionales</li></Link>
 <Link to={'/conclusion'}> <li className="nav__item">Conclusión</li></Link>
    
     

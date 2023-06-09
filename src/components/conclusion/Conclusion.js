@@ -1,8 +1,9 @@
 import React from 'react'
+import './conclusion.css'
 
 const Conclusion = () => {
   return (
-    <div>
+    <div className='conclusion__container'>
       <h3>Conclusión</h3>
       <p>El modelo SAMR (Sustitución, Aumento, Modificación, Redefinición) ofrece un enfoque poderoso para integrar la tecnología de manera efectiva en la educación. Desde la simple sustitución hasta la redefinición completa de las tareas, el modelo SAMR nos invita a repensar la forma en que utilizamos la tecnología en el aula.
 

@@ -8,6 +8,7 @@ import Modelo from './components/modelo/Modelo';
 import Beneficios from './components/beneficios/Beneficios';
 import Implementacion from './components/implementacion/Implementacion';
 import Conclusion from './components/conclusion/Conclusion';
+import Recursos from './components/recursos/Recursos';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/beneficios" element={<Beneficios/>} />
         <Route path="/implementacion" element={<Implementacion/>} />
         <Route path="/conclusion" element={<Conclusion/>} />
+        <Route path="/recursos" element={<Recursos/>} />
         
 
        
