@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './implementacion.css'
 import Swal from 'sweetalert2'
-import Zoom from 'react-reveal/Zoom';
+
 
 const Implementacion = () => {
 
@@ -41,7 +41,7 @@ const Implementacion = () => {
 
 <div className='cards__implementacion__container'>
 
-<Zoom left >
+
  
 
 <div className='card__implementacion'>
@@ -165,7 +165,7 @@ const Implementacion = () => {
 </div>
 
 
-</Zoom>   
+  
         
 
 

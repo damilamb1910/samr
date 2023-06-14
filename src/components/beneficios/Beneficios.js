@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './beneficios.css'
 
-import Flip from 'react-reveal/Flip';
 
 
 const Beneficios = () => {
@@ -43,7 +42,7 @@ const cambiar4=()=>{
       <div className='cards__beneficios__contanainer'>
 
 
-     <Flip bottom>
+   
      <div className='scene'>
             <div onClick={cambiar1}  className={`card__beneficios  ${ flip1 && 'card__beneficios__isActive'}` }>
                 <div className='card__face card__face--front'>
@@ -67,10 +66,10 @@ const cambiar4=()=>{
             </div>
         </div>
 
-     </Flip>
+   
 
        
-        <Flip bottom>
+       
         <div  className='scene'>
             <div onClick={cambiar2}  className={`card__beneficios  ${ flip2 && 'card__beneficios__isActive'}` }>
                 <div className='card__face card__face--front'>
@@ -94,10 +93,7 @@ const cambiar4=()=>{
             </div>
         </div>
 
-</Flip>
 
-        
-        <Flip bottom>
         <div className='scene'>
             <div onClick={cambiar3}  className={`card__beneficios  ${ flip3 && 'card__beneficios__isActive'}` }>
                 <div className='card__face card__face--front'>
@@ -120,11 +116,7 @@ const cambiar4=()=>{
 
             </div>
         </div>
-     </Flip>
-       
-
-        
-        <Flip bottom>
+     
         <div className='scene'>
             <div onClick={cambiar4}  className={`card__beneficios  ${ flip4 && 'card__beneficios__isActive'}` }>
                 <div className='card__face card__face--front'>
@@ -146,7 +138,6 @@ const cambiar4=()=>{
 
             </div>
         </div>
-</Flip>
 
       
 
