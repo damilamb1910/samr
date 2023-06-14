@@ -1,8 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './beneficios.css'
+
+import Flip from 'react-reveal/Flip';
 
 
 const Beneficios = () => {
+
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+        
+            
+        
+        },[])
+           
     const[flip1,Setflip1]=useState(false)
     const[flip2,Setflip2]=useState(false)
     const[flip3,Setflip3]=useState(false)
@@ -32,8 +43,8 @@ const cambiar4=()=>{
       <div className='cards__beneficios__contanainer'>
 
 
-     
-        <div className='scene'>
+     <Flip bottom>
+     <div className='scene'>
             <div onClick={cambiar1}  className={`card__beneficios  ${ flip1 && 'card__beneficios__isActive'}` }>
                 <div className='card__face card__face--front'>
                     <h4>Nivel de Sustitución</h4>
@@ -56,6 +67,10 @@ const cambiar4=()=>{
             </div>
         </div>
 
+     </Flip>
+
+       
+        <Flip bottom>
         <div  className='scene'>
             <div onClick={cambiar2}  className={`card__beneficios  ${ flip2 && 'card__beneficios__isActive'}` }>
                 <div className='card__face card__face--front'>
@@ -79,9 +94,10 @@ const cambiar4=()=>{
             </div>
         </div>
 
-        
-       
+</Flip>
 
+        
+        <Flip bottom>
         <div className='scene'>
             <div onClick={cambiar3}  className={`card__beneficios  ${ flip3 && 'card__beneficios__isActive'}` }>
                 <div className='card__face card__face--front'>
@@ -104,8 +120,11 @@ const cambiar4=()=>{
 
             </div>
         </div>
+     </Flip>
+       
 
-
+        
+        <Flip bottom>
         <div className='scene'>
             <div onClick={cambiar4}  className={`card__beneficios  ${ flip4 && 'card__beneficios__isActive'}` }>
                 <div className='card__face card__face--front'>
@@ -127,6 +146,9 @@ const cambiar4=()=>{
 
             </div>
         </div>
+</Flip>
+
+      
 
 
 

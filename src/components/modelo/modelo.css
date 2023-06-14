@@ -187,3 +187,9 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(37,136,238,1) 35%, r
         background-position-x:1000px ;
     }
 }
+
+@media only screen and  (max-width:1600px) {
+    .modelo__head{
+        padding-top: 150px;
+    }
+}

@@ -1,8 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './implementacion.css'
 import Swal from 'sweetalert2'
+import Zoom from 'react-reveal/Zoom';
 
 const Implementacion = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+    
+        
+    
+    },[])
+
   const[power1,setPower1]=useState(false)
   const[power2,setPower2]=useState(false)
   const[power3,setPower3]=useState(false)
@@ -32,7 +41,8 @@ const Implementacion = () => {
 
 <div className='cards__implementacion__container'>
 
-
+<Zoom left >
+ 
 
 <div className='card__implementacion'>
           <div className='card__implementacion__button__container'>
@@ -155,7 +165,7 @@ const Implementacion = () => {
 </div>
 
 
-        
+</Zoom>   
         
 
 

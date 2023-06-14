@@ -39,7 +39,7 @@ header {
     align-items: center;
     font-family: 'Oswald', sans-serif;
     position: fixed;
-    z-index: 4;
+    z-index: 9999;
     height: 80px;
     width: 100%;
     background-color: #0095D8;
@@ -146,3 +146,5 @@ box-shadow: inset 20px 20px 60px #0d0d0d,
       padding-left: 0;
       }
       }
+
+     
